@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLNhaHang", "QLNhaHang.csproj", "{F905C12A-69BC-4CC6-A78B-F621BA1B6DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F905C12A-69BC-4CC6-A78B-F621BA1B6DCF}.Debug|x86.ActiveCfg = Debug|x86
+		{F905C12A-69BC-4CC6-A78B-F621BA1B6DCF}.Debug|x86.Build.0 = Debug|x86
+		{F905C12A-69BC-4CC6-A78B-F621BA1B6DCF}.Release|x86.ActiveCfg = Release|x86
+		{F905C12A-69BC-4CC6-A78B-F621BA1B6DCF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
+	EndGlobalSection
+EndGlobal

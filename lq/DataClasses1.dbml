@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QuanLyATC_HueTam" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=VNR-PC\SQLEXPRESS;Initial Catalog=QuanLyATC_HueTam;Integrated Security=True" SettingsObjectName="NhanVien.Properties.Settings" SettingsPropertyName="QuanLyATC_HueTamConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CHUCVU" Member="CHUCVUs">
+    <Type Name="CHUCVU">
+      <Column Name="ID_ChucVu" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_ChucVu" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="HeSoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="CHUCVU_NHANVIEN" Member="NHANVIENs" ThisKey="ID_ChucVu" OtherKey="ID_ChucVu" Type="NHANVIEN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ORDERS" Member="ORDERs">
+    <Type Name="ORDER">
+      <Column Name="ID_Orders" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_KH" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_NV" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayGioDat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="BanSo" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+      <Association Name="ORDER_MON_ORDER" Member="MON_ORDERs" ThisKey="ID_Orders" OtherKey="ID_Orders" Type="MON_ORDER" />
+      <Association Name="KHACHHANG_ORDER" Member="KHACHHANG" ThisKey="ID_KH" OtherKey="ID_KH" Type="KHACHHANG" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="NHANVIEN_ORDER" Member="NHANVIEN" ThisKey="ID_NV" OtherKey="ID_NV" Type="NHANVIEN" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CUNGCAP" Member="CUNGCAPs">
+    <Type Name="CUNGCAP">
+      <Column Name="ID_NVL" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_NCC" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="NGUYENVATLIEU_CUNGCAP" Member="NGUYENVATLIEU" ThisKey="ID_NVL" OtherKey="ID_NVL" Type="NGUYENVATLIEU" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="NHACUNGCAP_CUNGCAP" Member="NHACUNGCAP" ThisKey="ID_NCC" OtherKey="ID_NCC" Type="NHACUNGCAP" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
+    <Type Name="KHACHHANG">
+      <Column Name="ID_KH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ho_KH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_KH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GioiTinh_KH" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SDT_KH" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="KHACHHANG_ORDER" Member="ORDERs" ThisKey="ID_KH" OtherKey="ID_KH" Type="ORDER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAI_MON" Member="LOAI_MONs">
+    <Type Name="LOAI_MON">
+      <Column Name="ID_LoaiMon" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_LoaiMon" Type="System.String" DbType="NChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTa" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Association Name="LOAI_MON_MON" Member="MONs" ThisKey="ID_LoaiMon" OtherKey="ID_LoaiMon" Type="MON" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAI_NVL" Member="LOAI_NVLs">
+    <Type Name="LOAI_NVL">
+      <Column Name="ID_LoaiNVL" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_LoaiNVL" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="LOAI_NVL_NGUYENVATLIEU" Member="NGUYENVATLIEUs" ThisKey="ID_LoaiNVL" OtherKey="ID_LoaiNVL" Type="NGUYENVATLIEU" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MON" Member="MONs">
+    <Type Name="MON">
+      <Column Name="ID_Mon" Type="System.String" DbType="NVarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_Mon" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="QuyCach" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NuocCham" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MonKemTheo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ChuThich" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ID_LoaiMon" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Association Name="MON_MON_NVL" Member="MON_NVLs" ThisKey="ID_Mon" OtherKey="ID_Mon" Type="MON_NVL" />
+      <Association Name="MON_MON_ORDER" Member="MON_ORDERs" ThisKey="ID_Mon" OtherKey="ID_Mon" Type="MON_ORDER" />
+      <Association Name="LOAI_MON_MON" Member="LOAI_MON" ThisKey="ID_LoaiMon" OtherKey="ID_LoaiMon" Type="LOAI_MON" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MON_NVL" Member="MON_NVLs">
+    <Type Name="MON_NVL">
+      <Column Name="ID_Mon" Type="System.String" DbType="NVarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_NVL" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CheBien" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MON_MON_NVL" Member="MON" ThisKey="ID_Mon" OtherKey="ID_Mon" Type="MON" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="NGUYENVATLIEU_MON_NVL" Member="NGUYENVATLIEU" ThisKey="ID_NVL" OtherKey="ID_NVL" Type="NGUYENVATLIEU" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MON_ORDERS" Member="MON_ORDERs">
+    <Type Name="MON_ORDER">
+      <Column Name="ID_Orders" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_Mon" Type="System.String" DbType="NVarChar(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="MON_MON_ORDER" Member="MON" ThisKey="ID_Mon" OtherKey="ID_Mon" Type="MON" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="ORDER_MON_ORDER" Member="ORDER" ThisKey="ID_Orders" OtherKey="ID_Orders" Type="ORDER" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NGUYENVATLIEU" Member="NGUYENVATLIEUs">
+    <Type Name="NGUYENVATLIEU">
+      <Column Name="ID_NVL" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_NVL" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_LoaiNVL" Type="System.String" DbType="NVarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="QuyCach" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuongCon" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ToiThieuDatLai" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="NGUYENVATLIEU_CUNGCAP" Member="CUNGCAPs" ThisKey="ID_NVL" OtherKey="ID_NVL" Type="CUNGCAP" />
+      <Association Name="NGUYENVATLIEU_MON_NVL" Member="MON_NVLs" ThisKey="ID_NVL" OtherKey="ID_NVL" Type="MON_NVL" />
+      <Association Name="LOAI_NVL_NGUYENVATLIEU" Member="LOAI_NVL" ThisKey="ID_LoaiNVL" OtherKey="ID_LoaiNVL" Type="LOAI_NVL" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHACUNGCAP" Member="NHACUNGCAPs">
+    <Type Name="NHACUNGCAP">
+      <Column Name="ID_NCC" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_NCC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="NHACUNGCAP_CUNGCAP" Member="CUNGCAPs" ThisKey="ID_NCC" OtherKey="ID_NCC" Type="CUNGCAP" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NHANVIEN" Member="NHANVIENs">
+    <Type Name="NHANVIEN">
+      <Column Name="ID_NV" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ho_NV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Ten_NV" Type="System.String" DbType="NVarChar(25) NOT NULL" CanBeNull="false" />
+      <Column Name="ID_ChucVu" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="GioiTinh_NV" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="NgayBatDauLam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="SoCaLam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiaChi_NV" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="SDT_NV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="NHANVIEN_ORDER" Member="ORDERs" ThisKey="ID_NV" OtherKey="ID_NV" Type="ORDER" />
+      <Association Name="CHUCVU_NHANVIEN" Member="CHUCVU" ThisKey="ID_ChucVu" OtherKey="ID_ChucVu" Type="CHUCVU" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+</Database>

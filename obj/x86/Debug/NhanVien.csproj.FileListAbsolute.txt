@@ -1,0 +1,25 @@
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.NhanVien.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.Properties.Resources.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.csproj.GenerateResource.Cache
+D:\cua trong\mon hoc\LT CSDL\NhanVien\bin\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\NhanVien\bin\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.csprojResolveAssemblyReference.cache
+F:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.exe
+F:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.pdb
+F:\LT CSDL\NhanVien\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.NhanVien.resources
+F:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.Properties.Resources.resources
+F:\LT CSDL\NhanVien\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\LT CSDL\NhanVien\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.exe
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.csprojResolveAssemblyReference.cache
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.NhanVien.resources
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.Properties.Resources.resources
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.csproj.GenerateResource.Cache
+I:\LT CSDL\NhanVien\bin\Debug\NhanVien.exe
+I:\LT CSDL\NhanVien\bin\Debug\NhanVien.pdb
+I:\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.frmDatHang.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.frmHoaDon.resources

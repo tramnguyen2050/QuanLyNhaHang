@@ -1,0 +1,50 @@
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\NhanVien\bin\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\NhanVien\bin\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.frmDatHang.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.frmHoaDon.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.NhanVien.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\NhanVien.Properties.Resources.resources
+D:\cua trong\mon hoc\LT CSDL\NhanVien\obj\x86\Debug\QLNhaHang.csproj.GenerateResource.Cache
+D:\cua trong\mon hoc\LT CSDL\QLNhaHang\obj\x86\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\QLNhaHang\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.frmDatHang.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.frmHoaDon.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.NhanVien.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.Properties.Resources.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\QLNhaHang.csproj.GenerateResource.Cache
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\bin\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\bin\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\QLNhaHang.csprojResolveAssemblyReference.cache
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\bin\Debug\NhanVien.exe.config
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.frmBangLuong.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.frmDelay.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam\obj\x86\Debug\NhanVien.MainFrm.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\bin\Debug\NhanVien.exe.config
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\bin\Debug\NhanVien.exe
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\bin\Debug\NhanVien.pdb
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\QLNhaHang.csprojResolveAssemblyReference.cache
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmBangLuong.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmDatHang.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmDelay.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmHoaDon.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.NhanVien.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.MainFrm.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.Properties.Resources.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\QLNhaHang.csproj.GenerateResource.Cache
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmThemMon.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\bin\Debug\NhanVien.exe.manifest
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\bin\Debug\NhanVien.application
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.exe.manifest
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.application
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmSuaChiTietHoaDon.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmDanhMuc.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmThemMoiNVL.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmThemHoaDon.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmThemMoiNV.resources
+D:\cua trong\mon hoc\LT CSDL\QLNhaHangHueTam - Copy\obj\x86\Debug\NhanVien.frmThemMoiMA.resources

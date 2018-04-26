@@ -1,0 +1,12 @@
+USE [QuanLyATC_HueTam]
+GO
+
+CREATE PROC uspXoaDanhMucNVL
+	@MaNVL NVARCHAR(10)
+AS
+	DELETE dbo.NGUYENVATLIEU
+	WHERE ID_NVL = @MaNVL
+
+EXEC dbo.uspXoaDanhMucNVL @MaNVL = N'R17' -- nvarchar(10)
+
+SELECT * FROM dbo.NGUYENVATLIEU
